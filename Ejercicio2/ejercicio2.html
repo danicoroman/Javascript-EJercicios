@@ -6,13 +6,18 @@
     <title>Ejercicio 2</title>
 </head>
 <body>
+    <div id="capa"></div>
     <script>
-    var h6=document.createElement("h6");
-    var h5=document.createElement("h5");
-    var h4=document.createElement("h4");
-    var h3=document.createElement("h3");
-    var h2=document.createElement("h2");
-    var h1=document.createElement("h1");
+    var cabeceras=[6,5,4,3,2,1];
+    var capa= document.querySelector('#capa');
+    for(var i=0;i<cabeceras.length;i++)
+    {
+        var h=document.createElement('h'+cabeceras[i]);
+        h.textContent = 'Javascript';
+        capa.appendChild(h);
+    }
+    
+    
     
     </script>
     
